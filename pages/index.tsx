@@ -23,6 +23,13 @@ export default function Home() {
 					buttonText='View stores nearby'
 					handleOnClick={handleOnBannerBtnClick}
 				/>
+				<Image
+					className={styles.heroImage}
+					src='/static/hero-image.png'
+					width={700}
+					height={400}
+					alt='Picture of coffee illustration'
+				/>
 			</main>
 		</>
 	);

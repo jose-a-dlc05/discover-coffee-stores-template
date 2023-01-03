@@ -1,9 +1,9 @@
 :root {
 	--max-width: 1100px;
 	--border-radius: 12px;
-	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-		'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-		'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+	--font-mono: IBMPlexSans, ui-monospace, Menlo, Monaco, 'Cascadia Mono',
+		'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace',
+		'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -42,6 +42,54 @@
 	--text-purple-dark: rgba(79, 70, 229, 1);
 	--text-black: rgba(17, 24, 39, 1);
 	--text-white-100: rgba(229, 231, 235, 1);
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/fonts/IBMPlexSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(/fonts/IBMPlexSans-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/fonts/IBMPlexSans-Bold.ttf) format('truetype');
+}
+
+p {
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	background-image: none;
+	font-weight: 600;
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -97,6 +145,7 @@ body {
 	background-size: cover;
 	color: #373b64;
 	height: 100%;
+	font-family: var(--font-mono);
 }
 
 a {
